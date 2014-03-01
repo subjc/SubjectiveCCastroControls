@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A817E7B918B8102800F45B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7B818B8102800F45B9D /* Foundation.framework */; };
+		A817E7BB18B8102800F45B9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7BA18B8102800F45B9D /* CoreGraphics.framework */; };
+		A817E7BD18B8102800F45B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7BC18B8102800F45B9D /* UIKit.framework */; };
+		A817E7C318B8102800F45B9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A817E7C118B8102800F45B9D /* InfoPlist.strings */; };
+		A817E7C518B8102800F45B9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A817E7C418B8102800F45B9D /* main.m */; };
+		A817E7C918B8102800F45B9D /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A817E7C818B8102800F45B9D /* SCAppDelegate.m */; };
+		A817E7CB18B8102800F45B9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A817E7CA18B8102800F45B9D /* Images.xcassets */; };
+		A817E7D218B8102800F45B9D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7D118B8102800F45B9D /* XCTest.framework */; };
+		A817E7D318B8102800F45B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7B818B8102800F45B9D /* Foundation.framework */; };
+		A817E7D418B8102800F45B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7BC18B8102800F45B9D /* UIKit.framework */; };
+		A817E7DC18B8102800F45B9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A817E7DA18B8102800F45B9D /* InfoPlist.strings */; };
+		A817E7DE18B8102800F45B9D /* SCCastroControlsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A817E7DD18B8102800F45B9D /* SCCastroControlsTests.m */; };
+		A817E7E918B8131900F45B9D /* SCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817E7E818B8131900F45B9D /* SCRootViewController.m */; };
+		A826602618B8A72E005AB68A /* SCControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602518B8A72E005AB68A /* SCControlsView.m */; };
+		A826602918B8A76A005AB68A /* SCTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602818B8A76A005AB68A /* SCTimelineView.m */; };
+		A826602F18B97A08005AB68A /* SCPlaybackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602E18B97A08005AB68A /* SCPlaybackItem.m */; };
+		A84F9C6F18B9825F00844F0A /* SCTapHintBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = A84F9C6E18B9825F00844F0A /* SCTapHintBehavior.m */; };
+		A84F9C7618B983FE00844F0A /* SCScrubbingBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = A84F9C7518B983FE00844F0A /* SCScrubbingBehavior.m */; };
+		A8D97BF418B8186A006BC837 /* SCPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D97BF318B8186A006BC837 /* SCPlaybackViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A817E7D518B8102800F45B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A817E7AD18B8102800F45B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A817E7B418B8102800F45B9D;
+			remoteInfo = SCCastroControls;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A817E7B518B8102800F45B9D /* SCCastroControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCCastroControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A817E7B818B8102800F45B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A817E7BA18B8102800F45B9D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A817E7BC18B8102800F45B9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A817E7C018B8102800F45B9D /* SCCastroControls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCCastroControls-Info.plist"; sourceTree = "<group>"; };
+		A817E7C218B8102800F45B9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A817E7C418B8102800F45B9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A817E7C618B8102800F45B9D /* SCCastroControls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCCastroControls-Prefix.pch"; sourceTree = "<group>"; };
+		A817E7C718B8102800F45B9D /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		A817E7C818B8102800F45B9D /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		A817E7CA18B8102800F45B9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A817E7D018B8102800F45B9D /* SCCastroControlsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCCastroControlsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A817E7D118B8102800F45B9D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A817E7D918B8102800F45B9D /* SCCastroControlsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCCastroControlsTests-Info.plist"; sourceTree = "<group>"; };
+		A817E7DB18B8102800F45B9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A817E7DD18B8102800F45B9D /* SCCastroControlsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCastroControlsTests.m; sourceTree = "<group>"; };
+		A817E7E718B8131900F45B9D /* SCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootViewController.h; sourceTree = "<group>"; };
+		A817E7E818B8131900F45B9D /* SCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootViewController.m; sourceTree = "<group>"; };
+		A826602418B8A72E005AB68A /* SCControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCControlsView.h; sourceTree = "<group>"; };
+		A826602518B8A72E005AB68A /* SCControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCControlsView.m; sourceTree = "<group>"; };
+		A826602718B8A76A005AB68A /* SCTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTimelineView.h; sourceTree = "<group>"; };
+		A826602818B8A76A005AB68A /* SCTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTimelineView.m; sourceTree = "<group>"; };
+		A826602D18B97A08005AB68A /* SCPlaybackItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlaybackItem.h; sourceTree = "<group>"; };
+		A826602E18B97A08005AB68A /* SCPlaybackItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackItem.m; sourceTree = "<group>"; };
+		A84F9C6D18B9825F00844F0A /* SCTapHintBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTapHintBehavior.h; sourceTree = "<group>"; };
+		A84F9C6E18B9825F00844F0A /* SCTapHintBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTapHintBehavior.m; sourceTree = "<group>"; };
+		A84F9C7418B983FE00844F0A /* SCScrubbingBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCScrubbingBehavior.h; sourceTree = "<group>"; };
+		A84F9C7518B983FE00844F0A /* SCScrubbingBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCScrubbingBehavior.m; sourceTree = "<group>"; };
+		A8D97BF218B8186A006BC837 /* SCPlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlaybackViewController.h; sourceTree = "<group>"; };
+		A8D97BF318B8186A006BC837 /* SCPlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A817E7B218B8102800F45B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A817E7BB18B8102800F45B9D /* CoreGraphics.framework in Frameworks */,
+				A817E7BD18B8102800F45B9D /* UIKit.framework in Frameworks */,
+				A817E7B918B8102800F45B9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A817E7CD18B8102800F45B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A817E7D218B8102800F45B9D /* XCTest.framework in Frameworks */,
+				A817E7D418B8102800F45B9D /* UIKit.framework in Frameworks */,
+				A817E7D318B8102800F45B9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A817E7AC18B8102800F45B9D = {
+			isa = PBXGroup;
+			children = (
+				A817E7BE18B8102800F45B9D /* SCCastroControls */,
+				A817E7D718B8102800F45B9D /* SCCastroControlsTests */,
+				A817E7B718B8102800F45B9D /* Frameworks */,
+				A817E7B618B8102800F45B9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A817E7B618B8102800F45B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A817E7B518B8102800F45B9D /* SCCastroControls.app */,
+				A817E7D018B8102800F45B9D /* SCCastroControlsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A817E7B718B8102800F45B9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A817E7B818B8102800F45B9D /* Foundation.framework */,
+				A817E7BA18B8102800F45B9D /* CoreGraphics.framework */,
+				A817E7BC18B8102800F45B9D /* UIKit.framework */,
+				A817E7D118B8102800F45B9D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A817E7BE18B8102800F45B9D /* SCCastroControls */ = {
+			isa = PBXGroup;
+			children = (
+				A817E7C718B8102800F45B9D /* SCAppDelegate.h */,
+				A817E7C818B8102800F45B9D /* SCAppDelegate.m */,
+				A84F9C7118B9839400844F0A /* View Controllers */,
+				A84F9C7318B983AE00844F0A /* UIDynamicBehavior classes */,
+				A84F9C7018B9838B00844F0A /* Views */,
+				A84F9C7218B983A300844F0A /* Model */,
+				A817E7CA18B8102800F45B9D /* Images.xcassets */,
+				A817E7BF18B8102800F45B9D /* Supporting Files */,
+			);
+			path = SCCastroControls;
+			sourceTree = "<group>";
+		};
+		A817E7BF18B8102800F45B9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A817E7C018B8102800F45B9D /* SCCastroControls-Info.plist */,
+				A817E7C118B8102800F45B9D /* InfoPlist.strings */,
+				A817E7C418B8102800F45B9D /* main.m */,
+				A817E7C618B8102800F45B9D /* SCCastroControls-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A817E7D718B8102800F45B9D /* SCCastroControlsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A817E7DD18B8102800F45B9D /* SCCastroControlsTests.m */,
+				A817E7D818B8102800F45B9D /* Supporting Files */,
+			);
+			path = SCCastroControlsTests;
+			sourceTree = "<group>";
+		};
+		A817E7D818B8102800F45B9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A817E7D918B8102800F45B9D /* SCCastroControlsTests-Info.plist */,
+				A817E7DA18B8102800F45B9D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A84F9C7018B9838B00844F0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A826602418B8A72E005AB68A /* SCControlsView.h */,
+				A826602518B8A72E005AB68A /* SCControlsView.m */,
+				A826602718B8A76A005AB68A /* SCTimelineView.h */,
+				A826602818B8A76A005AB68A /* SCTimelineView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A84F9C7118B9839400844F0A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A817E7E718B8131900F45B9D /* SCRootViewController.h */,
+				A817E7E818B8131900F45B9D /* SCRootViewController.m */,
+				A8D97BF218B8186A006BC837 /* SCPlaybackViewController.h */,
+				A8D97BF318B8186A006BC837 /* SCPlaybackViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A84F9C7218B983A300844F0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A826602D18B97A08005AB68A /* SCPlaybackItem.h */,
+				A826602E18B97A08005AB68A /* SCPlaybackItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A84F9C7318B983AE00844F0A /* UIDynamicBehavior classes */ = {
+			isa = PBXGroup;
+			children = (
+				A84F9C6D18B9825F00844F0A /* SCTapHintBehavior.h */,
+				A84F9C6E18B9825F00844F0A /* SCTapHintBehavior.m */,
+				A84F9C7418B983FE00844F0A /* SCScrubbingBehavior.h */,
+				A84F9C7518B983FE00844F0A /* SCScrubbingBehavior.m */,
+			);
+			name = "UIDynamicBehavior classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A817E7B418B8102800F45B9D /* SCCastroControls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A817E7E118B8102800F45B9D /* Build configuration list for PBXNativeTarget "SCCastroControls" */;
+			buildPhases = (
+				A817E7B118B8102800F45B9D /* Sources */,
+				A817E7B218B8102800F45B9D /* Frameworks */,
+				A817E7B318B8102800F45B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCCastroControls;
+			productName = SCCastroControls;
+			productReference = A817E7B518B8102800F45B9D /* SCCastroControls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A817E7CF18B8102800F45B9D /* SCCastroControlsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A817E7E418B8102800F45B9D /* Build configuration list for PBXNativeTarget "SCCastroControlsTests" */;
+			buildPhases = (
+				A817E7CC18B8102800F45B9D /* Sources */,
+				A817E7CD18B8102800F45B9D /* Frameworks */,
+				A817E7CE18B8102800F45B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A817E7D618B8102800F45B9D /* PBXTargetDependency */,
+			);
+			name = SCCastroControlsTests;
+			productName = SCCastroControlsTests;
+			productReference = A817E7D018B8102800F45B9D /* SCCastroControlsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A817E7AD18B8102800F45B9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Subjective-C";
+				TargetAttributes = {
+					A817E7CF18B8102800F45B9D = {
+						TestTargetID = A817E7B418B8102800F45B9D;
+					};
+				};
+			};
+			buildConfigurationList = A817E7B018B8102800F45B9D /* Build configuration list for PBXProject "SCCastroControls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A817E7AC18B8102800F45B9D;
+			productRefGroup = A817E7B618B8102800F45B9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A817E7B418B8102800F45B9D /* SCCastroControls */,
+				A817E7CF18B8102800F45B9D /* SCCastroControlsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A817E7B318B8102800F45B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A817E7C318B8102800F45B9D /* InfoPlist.strings in Resources */,
+				A817E7CB18B8102800F45B9D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A817E7CE18B8102800F45B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A817E7DC18B8102800F45B9D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A817E7B118B8102800F45B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A826602618B8A72E005AB68A /* SCControlsView.m in Sources */,
+				A826602F18B97A08005AB68A /* SCPlaybackItem.m in Sources */,
+				A8D97BF418B8186A006BC837 /* SCPlaybackViewController.m in Sources */,
+				A817E7C918B8102800F45B9D /* SCAppDelegate.m in Sources */,
+				A84F9C6F18B9825F00844F0A /* SCTapHintBehavior.m in Sources */,
+				A826602918B8A76A005AB68A /* SCTimelineView.m in Sources */,
+				A817E7E918B8131900F45B9D /* SCRootViewController.m in Sources */,
+				A817E7C518B8102800F45B9D /* main.m in Sources */,
+				A84F9C7618B983FE00844F0A /* SCScrubbingBehavior.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A817E7CC18B8102800F45B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A817E7DE18B8102800F45B9D /* SCCastroControlsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A817E7D618B8102800F45B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A817E7B418B8102800F45B9D /* SCCastroControls */;
+			targetProxy = A817E7D518B8102800F45B9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A817E7C118B8102800F45B9D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A817E7C218B8102800F45B9D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A817E7DA18B8102800F45B9D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A817E7DB18B8102800F45B9D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A817E7DF18B8102800F45B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A817E7E018B8102800F45B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A817E7E218B8102800F45B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCCastroControls/SCCastroControls-Prefix.pch";
+				INFOPLIST_FILE = "SCCastroControls/SCCastroControls-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A817E7E318B8102800F45B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCCastroControls/SCCastroControls-Prefix.pch";
+				INFOPLIST_FILE = "SCCastroControls/SCCastroControls-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A817E7E518B8102800F45B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SCCastroControls.app/SCCastroControls";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCCastroControls/SCCastroControls-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SCCastroControlsTests/SCCastroControlsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A817E7E618B8102800F45B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SCCastroControls.app/SCCastroControls";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCCastroControls/SCCastroControls-Prefix.pch";
+				INFOPLIST_FILE = "SCCastroControlsTests/SCCastroControlsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A817E7B018B8102800F45B9D /* Build configuration list for PBXProject "SCCastroControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A817E7DF18B8102800F45B9D /* Debug */,
+				A817E7E018B8102800F45B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A817E7E118B8102800F45B9D /* Build configuration list for PBXNativeTarget "SCCastroControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A817E7E218B8102800F45B9D /* Debug */,
+				A817E7E318B8102800F45B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A817E7E418B8102800F45B9D /* Build configuration list for PBXNativeTarget "SCCastroControlsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A817E7E518B8102800F45B9D /* Debug */,
+				A817E7E618B8102800F45B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A817E7AD18B8102800F45B9D /* Project object */;
+}
