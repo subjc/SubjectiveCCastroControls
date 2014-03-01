@@ -33,26 +33,26 @@ static CGFloat kLabelWidthPadding = 10.f;
 
 #pragma mark - Public
 
-- (void)setNeedsPlaybackUpdate
+- (void)updateForPlaybackItem:(SCPlaybackItem *)playbackItem
 {
-    [self updateProgressViewForElapsedTime:self.playbackItem.elapsedTime];
-    [self updateElapsedTimeLabelForElapsedTime:self.playbackItem.elapsedTime];
+    [self updateProgressViewForPlaybackItem:playbackItem];
+    [self updateElapsedTimeLabelForPlaybackItem:playbackItem];
 }
 
 #pragma mark - Private
 
-- (void)updateProgressViewForElapsedTime:(NSTimeInterval)elapsedTime
+- (void)updateProgressViewForPlaybackItem:(SCPlaybackItem *)playbackItem
 {
-    if (self.playbackItem.totalTime > 0.f)
+    if (playbackItem.totalTime > 0.f)
     {
-        CGFloat progress = elapsedTime / self.playbackItem.totalTime;
+        CGFloat progress = playbackItem.elapsedTime / playbackItem.totalTime;
         self.progressView.frame = CGRectMake(0.f, 0.f, CGRectGetWidth(self.bounds) * progress, CGRectGetHeight(self.bounds));
     }
 }
 
-- (void)updateElapsedTimeLabelForElapsedTime:(NSTimeInterval)elapsedTime
+- (void)updateElapsedTimeLabelForPlaybackItem:(SCPlaybackItem *)playbackItem
 {
-    self.elapsedTimeLabel.text = [self.playbackItem stringForElapsedTime];
+    self.elapsedTimeLabel.text = [playbackItem stringForElapsedTime];
     
     CGSize labelSize = [self.elapsedTimeLabel.text sizeWithAttributes:@{NSFontAttributeName:self.elapsedTimeLabel.font}];
     self.elapsedTimeLabel.frame = CGRectMake(CGRectGetMinX(self.elapsedTimeLabel.frame),

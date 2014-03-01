@@ -11,11 +11,9 @@
 
 @interface SCTimelineView : UIView
 
-@property (nonatomic, strong) SCPlaybackItem *playbackItem;
-
 @property (nonatomic, strong) UIView *progressView;
 @property (nonatomic, strong) UILabel *elapsedTimeLabel;
 
-- (void)setNeedsPlaybackUpdate;
+- (void)updateForPlaybackItem:(SCPlaybackItem *)playbackItem;
 
 @end

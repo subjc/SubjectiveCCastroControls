@@ -85,12 +85,12 @@ const CGFloat kGrabHandleInset = 10.f;
 
 #pragma mark - Public
 
-- (void)setNeedsPlaybackUpdate
+- (void)updateForPlaybackItem:(SCPlaybackItem *)playbackItem
 {
-    self.elapsedTimeLabel.text = [self.playbackItem stringForElapsedTime];
+    self.elapsedTimeLabel.text = [playbackItem stringForElapsedTime];
     [self.elapsedTimeLabel sizeToFit];
     
-    self.remainingTimeLabel.text = [self.playbackItem stringForRemainingTime];
+    self.remainingTimeLabel.text = [playbackItem stringForRemainingTime];
     [self.remainingTimeLabel sizeToFit];
 }
 

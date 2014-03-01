@@ -87,12 +87,9 @@ const CGFloat kKeylineHeight = 1.f;
 - (void)setPlaybackItem:(SCPlaybackItem *)playbackItem
 {
     _playbackItem = playbackItem;
-    
-    self.timelineView.playbackItem = playbackItem;
-    [self.timelineView setNeedsPlaybackUpdate];
-    
-    self.controlsView.playbackItem = playbackItem;
-    [self.controlsView setNeedsPlaybackUpdate];
+
+    [self.timelineView updateForPlaybackItem:playbackItem];
+    [self.controlsView updateForPlaybackItem:playbackItem];
 }
 
 #pragma mark - Playback timer
@@ -102,8 +99,8 @@ const CGFloat kKeylineHeight = 1.f;
     if (self.isTimelineScrubbing == NO && self.playbackItem.elapsedTime < self.playbackItem.totalTime)
     {
         self.playbackItem.elapsedTime += 1;
-        [self.timelineView setNeedsPlaybackUpdate];
-        [self.controlsView setNeedsPlaybackUpdate];
+        [self.timelineView updateForPlaybackItem:self.playbackItem];
+        [self.controlsView updateForPlaybackItem:self.playbackItem];
     }
 }
 
@@ -142,19 +139,19 @@ const CGFloat kKeylineHeight = 1.f;
     self.timelineScrubbing = NO;
     self.timelineView.elapsedTimeLabel.alpha = 0.f;
     
+    if (self.shouldCommitTimelineScrubbing == NO)
+    {
+        self.playbackItem.elapsedTime = self.elapsedTimeAtTouchesBegan;
+        [self.timelineView updateForPlaybackItem:self.playbackItem];
+        [self.controlsView updateForPlaybackItem:self.playbackItem];
+    }
+    
     void (^timelineCollapsingBlock)() = ^void() {
         
         CGAffineTransform timelineViewScaleTransform = CGAffineTransformMakeScale(1.f, kTimelineCollapsedHeight / kTimelineExpandedHeight);
         CGAffineTransform timelineViewTranslationTransform = CGAffineTransformMakeTranslation(0.f, kTimelineExpandedHeight / kTimelineCollapsedHeight);
 
         self.timelineView.transform = CGAffineTransformConcat(timelineViewScaleTransform, timelineViewTranslationTransform);
-        
-        if (self.shouldCommitTimelineScrubbing == NO)
-        {
-            self.playbackItem.elapsedTime = self.elapsedTimeAtTouchesBegan;
-            [self.timelineView setNeedsPlaybackUpdate];
-            [self.controlsView setNeedsPlaybackUpdate];
-        }
     };
     
 
@@ -201,8 +198,8 @@ const CGFloat kKeylineHeight = 1.f;
         NSTimeInterval timeAdjustment = self.playbackItem.totalTime * scrubbingProgress;
         
         self.playbackItem.elapsedTime = self.elapsedTimeAtTouchesBegan + timeAdjustment;
-        [self.timelineView setNeedsPlaybackUpdate];
-        [self.controlsView setNeedsPlaybackUpdate];
+        [self.timelineView updateForPlaybackItem:self.playbackItem];
+        [self.controlsView updateForPlaybackItem:self.playbackItem];
         
         self.controlsView.center = CGPointMake(translatedCenterX, self.controlsView.center.y);
     }
@@ -298,15 +295,15 @@ static CGFloat kGravityMagnitude = 2.f;
 - (void)controlsView:(SCControlsView *)controlsView didTapRewindButton:(UIButton *)playButton
 {
     self.playbackItem.elapsedTime = fmax(0., self.playbackItem.elapsedTime - 30.);
-    [self.timelineView setNeedsPlaybackUpdate];
-    [self.controlsView setNeedsPlaybackUpdate];
+    [self.timelineView updateForPlaybackItem:self.playbackItem];
+    [self.controlsView updateForPlaybackItem:self.playbackItem];
 }
 
 - (void)controlsView:(SCControlsView *)controlsView didTapFastForwardButton:(UIButton *)playButton
 {
     self.playbackItem.elapsedTime = fmin(self.playbackItem.totalTime, self.playbackItem.elapsedTime + 30.);
-    [self.timelineView setNeedsPlaybackUpdate];
-    [self.controlsView setNeedsPlaybackUpdate];
+    [self.timelineView updateForPlaybackItem:self.playbackItem];
+    [self.controlsView updateForPlaybackItem:self.playbackItem];
 }
 
 @end

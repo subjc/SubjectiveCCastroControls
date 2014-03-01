@@ -29,9 +29,8 @@
 @property (nonatomic, strong) UILabel *elapsedTimeLabel;
 @property (nonatomic, strong) UILabel *remainingTimeLabel;
 
-@property (nonatomic, strong) SCPlaybackItem *playbackItem;
 @property (nonatomic, weak) id<SCControlsViewDelegate> delegate;
 
-- (void)setNeedsPlaybackUpdate;
+- (void)updateForPlaybackItem:(SCPlaybackItem *)playbackItem;
 
 @end
