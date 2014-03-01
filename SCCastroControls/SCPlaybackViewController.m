@@ -219,7 +219,7 @@ const CGFloat kKeylineHeight = 1.f;
                           delay:0.f
                         options:UIViewAnimationOptionBeginFromCurrentState
                      animations:^{
-                         self.controlsView.alpha = 0.5f;
+                         [self.controlsView configureAlphaForScrubbingState];
                      } completion:NULL];
 }
 
@@ -229,7 +229,7 @@ const CGFloat kKeylineHeight = 1.f;
                           delay:0.f
                         options:UIViewAnimationOptionBeginFromCurrentState
                      animations:^{
-                         self.controlsView.alpha = 1.f;
+                         [self.controlsView configureAlphaForDefaultState];
                      } completion:NULL];
 }
 

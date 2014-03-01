@@ -94,6 +94,32 @@ const CGFloat kGrabHandleInset = 10.f;
     [self.remainingTimeLabel sizeToFit];
 }
 
+- (void)configureAlphaForScrubbingState
+{
+    self.playPauseButton.alpha = 0.5f;
+    self.rewindButton.alpha = 0.5f;
+    self.fastForwardButton.alpha = 0.5f;
+    
+    self.remainingTimeLabel.alpha = 0.f;
+    self.elapsedTimeLabel.alpha = 0.f;
+    
+    self.leftGrabHandleView.alpha = 0.f;
+    self.rightGrabHandleView.alpha = 0.f;
+}
+
+- (void)configureAlphaForDefaultState
+{
+    self.playPauseButton.alpha = 1.f;
+    self.rewindButton.alpha = 1.f;
+    self.fastForwardButton.alpha = 1.f;
+    
+    self.remainingTimeLabel.alpha = 1.f;
+    self.elapsedTimeLabel.alpha = 1.f;
+    
+    self.leftGrabHandleView.alpha = 1.f;
+    self.rightGrabHandleView.alpha = 1.f;
+}
+
 #pragma mark - Actions
 
 - (void)playPauseButtonTapped:(UIButton *)sender

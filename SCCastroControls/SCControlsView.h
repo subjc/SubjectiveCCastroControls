@@ -33,4 +33,7 @@
 
 - (void)updateForPlaybackItem:(SCPlaybackItem *)playbackItem;
 
+- (void)configureAlphaForScrubbingState;
+- (void)configureAlphaForDefaultState;
+
 @end
